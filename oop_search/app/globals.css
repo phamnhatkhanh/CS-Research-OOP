@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  font-size: 2rem;
+}
+
+.btn {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.btn.is-center {
+  justify-content: center;
+}
+.btn.is-normal {
+  border: 2px solid #ccc;
+}
+.btn.is-hover:hover {
+  background-color: #f4f4f4;
+}
+
+.learn__title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.ck-heading_heading1 {
+  font-size: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aba8a8;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+.layout-learn {
+  display: grid;
+  grid-template-columns: 320px auto;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout-learn {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.content-html {
+  color: "#23272f";
+}
+.content-html h1 {
+  font-size: 3rem;
+  margin: 20px 0px;
+}
+.content-html h2 {
+  font-size: 2.5rem;
+  margin: 20px 0px;
+}
+
+ol,
+ul,
+menu {
+  list-style: disc inside;
+}
+
+code[class*=language-],
+pre[class*=language-] {
+  color: #ccc;
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background: #2d2d2d;
+}
+
+pre {
+  border-radius: 10px;
+  padding: 10px;
+  background: #2d2d2d;
+  overflow: auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fb606b;
+}
+
+.content-html img {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.input-search {
+  outline: none;
+  border: none;
+  background: unset;
+  width: 100%;
+  color: #23272f;
+  font-weight: 500;
+}/*# sourceMappingURL=globals.css.map */

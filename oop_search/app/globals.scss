@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-size: 2rem;
+  font-family: "Noto Sans", "Inter", sans-serif;
+}
+
+.btn {
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  min-width: 50px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  &.is-center {
+    justify-content: center;
+  }
+
+  &.is-normal {
+    border: 2px solid #ccc;
+  }
+
+  &.is-hover:hover {
+    background-color: #f4f4f4;
+  }
+}
+
+.navigation {
+}
+
+.learn__title {
+  font-size: 3rem;
+  font-weight: bold;
+
+  margin: 20px 0px;
+}
+
+.ck-heading_heading1 {
+  font-size: 3rem;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+.layout-learn {
+  display: grid;
+  grid-template-columns: 320px auto;
+
+  gap: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .layout-learn {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.content-html {
+  color: "#23272f";
+  & h1 {
+    font-size: 3rem;
+    margin: 20px 0px;
+  }
+  & h2 {
+    font-size: 2.5rem;
+    margin: 20px 0px;
+  }
+}
+ol,
+ul,
+menu {
+  list-style: disc inside;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+}
+pre {
+  border-radius: 10px;
+  padding: 10px;
+
+  overflow: auto;
+  max-width: 800px;
+  margin: 20px auto;
+}
+code {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fb606b;
+}
+.content-html {
+  & img {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+.input-search {
+  outline: none;
+  border: none;
+  background: unset;
+  width: 100%;
+
+  font-weight: 500;
+}
