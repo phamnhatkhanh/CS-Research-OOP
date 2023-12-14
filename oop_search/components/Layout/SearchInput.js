@@ -21,7 +21,7 @@ const SearchInput = () => {
     timeRef.current = setTimeout(() => {
       router.push(`/learn/search?search=${e.target.value}`);
       setIsLoading(false);
-    }, 500);
+    }, 1000);
   };
   return (
     <>
