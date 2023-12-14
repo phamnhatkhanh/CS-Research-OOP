@@ -123,7 +123,7 @@ const NavigationMobile = ({ handleClickNavigation }) => {
                 <Typography>Code Editor</Typography>
               </Link>
             </Box>
-            <Box
+            {/* <Box
               className="btn is-center"
               sx={{
                 "&:hover": {
@@ -134,7 +134,7 @@ const NavigationMobile = ({ handleClickNavigation }) => {
               <Link href="/about-us">
                 <Typography>Về chúng tui</Typography>
               </Link>
-            </Box>
+            </Box> */}
           </Box>
         </Box>
       </Box>

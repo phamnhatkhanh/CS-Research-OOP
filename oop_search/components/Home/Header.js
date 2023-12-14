@@ -115,7 +115,7 @@ const Header = ({}) => {
               display: { xs: "none", md: "flex" },
             }}
           >
-            <Box
+            {/* <Box
               className="btn is-center"
               sx={{
                 "&:hover": {
@@ -126,7 +126,7 @@ const Header = ({}) => {
               <Link href="/about-us">
                 <Typography>Về chúng tui</Typography>
               </Link>
-            </Box>
+            </Box> */}
             <Box
               className="btn is-center"
               sx={{
