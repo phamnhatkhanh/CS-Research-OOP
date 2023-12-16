@@ -3,7 +3,6 @@ import ClearIcon from "@mui/icons-material/Clear";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { Box, IconButton, Typography } from "@mui/material";
-
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 const NavigationMobile = ({ handleClickNavigation }) => {
@@ -57,7 +56,7 @@ const NavigationMobile = ({ handleClickNavigation }) => {
               <Link href="/">
                 <Box>
                   <img
-                    src="https://i.imgur.com/jStP8Cx.png"
+                    src="/logo_robot.png"
                     width={40}
                     height={40}
                   />

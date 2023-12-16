@@ -66,9 +66,9 @@ const Header = ({}) => {
             <Link href="/">
               <Box>
                 <img
-                  src="https://i.imgur.com/jStP8Cx.png"
-                  width={40}
-                  height={40}
+                  src="/logo_robot.png"
+                  width={60}
+                  height={60}
                 />
               </Box>
             </Link>
