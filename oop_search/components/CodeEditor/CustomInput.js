@@ -15,7 +15,7 @@ const CustomInput = ({ customInput, setCustomInput }) => {
             `1px 2px 6px 0px ${theme.palette.backgroundCode.background.boxShadow}`,
         }}
         component={"textarea"}
-        rows="5"
+        rows="7"
         value={customInput}
         onChange={(e) => setCustomInput(e.target.value)}
         placeholder={`Nhập dữ liệu từ bàn phím`}

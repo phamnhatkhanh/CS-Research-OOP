@@ -8,9 +8,15 @@ const SearchInput = () => {
   let timeRef = useRef(null);
   const [searchValue, setSearchValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const handleChangeSeachValue = (e) => {
-    setSearchValue(e.target.value);
-    if (e.target.value === "") {
+
+  // const handleChangeSearchValue = (event) => {
+  //   setSearchValue(event.target.value);
+  // };
+
+  const handleSearchClick = () => {
+   
+    console.log('Search clicked with value:', searchValue);
+    if (searchValue === "") {
       clearTimeout(timeRef.current);
       setIsLoading(false);
       router.push(`/learn/`);
@@ -19,9 +25,14 @@ const SearchInput = () => {
     clearTimeout(timeRef.current);
     setIsLoading(true);
     timeRef.current = setTimeout(() => {
-      router.push(`/learn/search?search=${e.target.value}`);
+      router.push(`/learn/search?search=${searchValue}`);
       setIsLoading(false);
-    }, 1000);
+    }, 500);
+    
+  };
+
+  const handleChangeSeachValue = (e) => {
+    setSearchValue(e.target.value);
   };
   return (
     <>
@@ -36,7 +47,7 @@ const SearchInput = () => {
           color: "#a5adbb",
         }}
       >
-        <SearchIcon></SearchIcon>
+        <SearchIcon onClick={handleSearchClick}></SearchIcon>
         <input
           component="input"
           type="text"

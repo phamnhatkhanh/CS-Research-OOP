@@ -40,7 +40,7 @@ const OutputWindow = ({ outputDetails }) => {
       <Box
         sx={{
           width: "100%",
-          height: "200px",
+          height: "300px",
         }}
         component={"pre"}
       >

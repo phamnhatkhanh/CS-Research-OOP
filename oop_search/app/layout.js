@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={notoSans.className}>
       <body>
+        <br></br>
         <ReduxLayout>
           <ThemeLayout>
             <UseQueryWrap>{children}</UseQueryWrap>

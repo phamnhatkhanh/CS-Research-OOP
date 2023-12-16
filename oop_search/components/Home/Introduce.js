@@ -24,33 +24,7 @@ const Introduce = () => {
           padding: "20px",
         }}
       >
-        <Box>
-          {" "}
-          <img src="https://i.imgur.com/TL53fbS.png" width={250} height={250} />
-        </Box>
-        <Box>
-          <Typography
-            component={"h1"}
-            sx={{
-              fontSize: { xs: "3rem", md: "5rem" },
-              fontWeight: "bold",
-            }}
-          >
-            Tra cứu kiến thức OOP
-          </Typography>
-        </Box>
-        <Box>
-          <Typography
-            sx={{
-              fontSize: { xs: "2rem", md: "2.5rem" },
-              fontWeight: "bold",
-            }}
-          >
-            Trang web dùng để tra cứu các khái niệm, tính chất, dạng bài tập về
-            lập trình hướng đối tượng
-          </Typography>
-        </Box>
-        <SearchInput />
+        
 
         <Box
           sx={{
@@ -155,6 +129,34 @@ const Introduce = () => {
               </Box>
             </Box>
           </Link>
+        </Box>
+        <SearchInput />
+
+        <Box>
+          {" "}
+          <img src="https://i.imgur.com/TL53fbS.png" width={250} height={250} />
+        </Box>
+        <Box>
+          <Typography
+            component={"h1"}
+            sx={{
+              fontSize: { xs: "3rem", md: "5rem" },
+              fontWeight: "bold",
+            }}
+          >
+            Tra cứu kiến thức OOP
+          </Typography>
+        </Box>
+        <Box>
+          <Typography
+            sx={{
+              fontSize: { xs: "2rem", md: "2.5rem" },
+              fontWeight: "bold",
+            }}
+          >
+            Trang web dùng để tra cứu các khái niệm, tính chất, dạng bài tập về
+            lập trình hướng đối tượng
+          </Typography>
         </Box>
       </Box>
     </Box>
